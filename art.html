@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESNARY |SHOPEE</title>
+    <link rel="shortcut icon" href="/desk/logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <style>
+         /* Cards section */
+         .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: 0.5s ;
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            border-radius: 10px;
+        }
+        .card:hover{transform: translateY(-35px);
+            background-color: rgb(255, 98, 0);
+            
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .card .cost {
+            color: #e91e63;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .scrollable-images img{
+            width: 400px;
+            height: 300px;
+            padding: 25px;
+        }
+        
+        .jio :hover{
+            background-color: #e91e63;
+            padding: 30px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+    </style>
+ <!-- Navbar -->
+ <!-- <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#items">Items</a>
+    <a href="#contact">Contact Us</a>
+</nav> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Dropdown</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Dropdown Styling */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .dropdown-content {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="#">Printing services</a>
+    <div class="dropdown">
+      <a href="#">Stationary &#9662;</a> <!-- Down arrow for dropdown -->
+      <div class="dropdown-content">
+        <a href="notebook.html">Notebooks</a>
+        <a href="kids.html">Kids</a>
+        <!-- <a href="files-folder.html">Files & Folders</a> -->
+        <a href="art.html">Art Supplies</a>
+      </div>
+    </div>
+    <a href="#">Books</a>
+    <a href="#">Craft Supplies</a>
+    <a href="#">Contact Us</a>
+  </div>
+</body>
+</html>
+
+
+    
+
+
+
+    <div class="cards-container">
+        <div class="card">
+            <img src="/art/20.webp" alt="Product 1">
+            <h3>	
+                KALOUR82 DRAWINGS </h3>
+            <p>COST</p>
+            <p class="cost">₹4119</p>
+        </div>
+        <div class="card">
+            <img src="/art/19.webp" alt="Product 2">
+            <h3>CALENDER</h3>
+            <p>COST</p>
+            <p class="cost">₹5123</p>
+        </div>
+        <!-- Repeat similar cards -->
+        <div class="card">
+            <img src="/art/18.webp" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Description of product 3.</p>
+            <p class="cost">₹700</p>
+        </div>
+        <div class="card">
+            <img src="/art/16.webp" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Description of product 4.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="/art/15.webp" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Description of product 4.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="/art/14" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Description of product 4.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="/art/17.webp" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Description of product 4.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="/art/13.webp" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Description of product 4.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="/art/12.webp" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Description of product 4.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="/art/11.webp" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Description of product 4.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="/art/10.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="/art/9.webp" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="/art/8.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="/art/7.webp" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="/art/6.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="/art/5.webp" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p class="cost">₹600</p>
+        </div><div class="card">
+            <img src="/art/4.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="/art/3.webp" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="/art/2.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="/art/1.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="/pics/drset.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="/pics/holderd.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="/pics/holderss.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="/pics/driveholder.webp" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2.</p>
+            <p class="cost">₹600</p>
+        </div><div class="card">
+            <img src="/pics/pendriveholder.webp" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1.</p>
+            <p class="cost">₹500</p>
+        </div>
+        
+
+        <!-- Add 6 more cards as needed -->
+    </div>
+</body>
+</html>
