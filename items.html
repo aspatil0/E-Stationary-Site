@@ -13,7 +13,6 @@
             box-sizing: border-box;
         }
 
-        /* Navbar styling */
         .navbar {
             justify-content: space-between;
             align-items: center;
@@ -38,7 +37,6 @@
             color: red;
         }
 
-        /* Search box styling */
         .search-container {
             margin: 20px auto;
             text-align: center;
@@ -52,7 +50,6 @@
             border-radius: 5px;
         }
 
-        /* Table styling */
         table {
             width: 80%;
             margin: 20px auto;
@@ -73,7 +70,6 @@
             background-color: #f9f9f9;
         }
 
-        /* Button styling */
         .download-btn {
             display: block;
             margin: 20px auto;
@@ -92,7 +88,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="shop.html">Shop</a>
@@ -100,12 +95,10 @@
         <a href="#contact">Contact Us</a>
     </nav>
 
-    <!-- Search box -->
     <div class="search-container">
         <input type="text" id="searchBox" placeholder="Search for a product...">
     </div>
 
-    <!-- Table -->
     <table id="productTable">
         <thead>
             <tr>
@@ -115,17 +108,14 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Dynamic rows go here -->
         </tbody>
     </table>
 
-    <!-- Download Button -->
     <button class="download-btn" id="downloadBtn">Download Selected</button>
 
-    <script>
-        // Sample data
+    <script>// all e-stationary pordects if there are more then addusing this syntax
         const products = [
-            { name: "GEL PEN", price: "$500" },
+    { name: "GEL PEN", price: "$500" },
     { name: "PENCIL", price: "$300" },
     { name: "COLOUR PEN", price: "$50" },
     { name: "RED PEN", price: "$200" },
@@ -269,14 +259,12 @@
     { name: "Postcard Pack", price: "$2.50" },
     { name: "Clip-on Book Light", price: "$10.00" },
     { name: "Drawing Compass Set", price: "$6.50" }
-        ];
+        ]; // all e-stationary pordects if there are more then addusing this syntax
 
-        // Reference to table body, search box, and download button
         const tableBody = document.querySelector("#productTable tbody");
         const searchBox = document.getElementById("searchBox");
         const downloadBtn = document.getElementById("downloadBtn");
 
-        // Function to display products in the table
         function displayProducts(filteredProducts) {
             tableBody.innerHTML = ""; // Clear existing rows
 
@@ -295,11 +283,7 @@
                 tableBody.appendChild(row);
             });
         }
-
-        // Initial display of all products
         displayProducts(products);
-
-        // Event listener for search functionality
         searchBox.addEventListener("input", () => {
             const query = searchBox.value.toLowerCase();
             const filteredProducts = products.filter(product =>
@@ -320,7 +304,6 @@
                 alert("No products selected.");
                 return;
             }
-
             const csvContent = "Product,Price\n" + selectedProducts.map(product => `${product.name},${product.price}`).join("\n");
             const blob = new Blob([csvContent], { type: "text/csv" });
             const url = URL.createObjectURL(blob);
