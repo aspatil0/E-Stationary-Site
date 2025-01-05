@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            
+        }
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+        /* Search box styling */
+        .search-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .search-container input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Button styling */
+        .download-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="items.html">Items</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Search box -->
+    <div class="search-container">
+        <input type="text" id="searchBox" placeholder="Search for a product...">
+    </div>
+
+    <!-- Table -->
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic rows go here -->
+        </tbody>
+    </table>
+
+    <!-- Download Button -->
+    <button class="download-btn" id="downloadBtn">Download Selected</button>
+
+    <script>
+        // Sample data
+        const products = [
+            { name: "GEL PEN", price: "$500" },
+    { name: "PENCIL", price: "$300" },
+    { name: "COLOUR PEN", price: "$50" },
+    { name: "RED PEN", price: "$200" },
+    { name: "BLACK BALL PEN", price: "$40" },
+    { name: "BLACK GEL PEN", price: "$40" },
+    { name: "INK  STAMP PAD", price: "$40" },
+    { name: "PAPER CUTTER", price: "$40" },
+    { name: "STAPLER", price: "$40" },
+    { name: "SIGNATURE PAD", price: "$40" },
+    { name: "STAPLER", price: "$40" },
+    { name: "Notebook", price: "$2" },
+            { name: "Pen", price: "$1" },
+            { name: "Pencil", price: "$0.5" },
+            { name: "Eraser", price: "$0.3" },
+            { name: "Sharpener", price: "$0.4" },
+            { name: "Ruler", price: "$1.5" },
+            { name: "Glue Stick", price: "$2.5" },
+            { name: "Scissors", price: "$3" },
+            { name: "Stapler", price: "$4" },
+            { name: "Staples", price: "$1" },
+            { name: "Paper Clips", price: "$0.8" },
+            { name: "Binder Clips", price: "$1.2" },
+            { name: "Highlighter", price: "$1.5" },
+            { name: "Marker", price: "$2" },
+            { name: "Sketch Pen", price: "$3" },
+            { name: "Whiteboard Marker", price: "$3.5" },
+            { name: "Chalk", price: "$0.5" },
+            { name: "Duster", price: "$2" },
+            { name: "Geometry Box", price: "$5" },
+            { name: "Calculator", price: "$10" },
+            { name: "Notebook (Large)", price: "$3" },
+            { name: "Diary", price: "$4" },
+            { name: "Journal", price: "$6" },
+            { name: "File Folder", price: "$2" },
+            { name: "Ring Binder", price: "$3" },
+            { name: "Document Holder", price: "$4" },
+            { name: "Sticky Notes", price: "$1.5" },
+            { name: "Index Tabs", price: "$1" },
+            { name: "Tape", price: "$0.7" },
+            { name: "Double-Sided Tape", price: "$1.5" },
+            { name: "Glue Bottle", price: "$2" },
+            { name: "Punching Machine", price: "$6" },
+            { name: "Paper Cutter", price: "$3" },
+            { name: "Craft Paper", price: "$1.5" },
+            { name: "Drawing Paper", price: "$2" },
+            { name: "Graph Paper", price: "$1" },
+            { name: "Tracing Paper", price: "$3" },
+            { name: "A4 Paper Ream", price: "$10" },
+            { name: "Color Paper Pack", price: "$8" },
+            { name: "Envelopes", price: "$2" },
+            { name: "Cardboard Sheet", price: "$1" },
+            { name: "Poster Colors", price: "$5" },
+            { name: "Acrylic Paint", price: "$7" },
+            { name: "Watercolors", price: "$6" },
+            { name: "Paint Brushes", price: "$3" },
+            { name: "Palette", price: "$2" },
+            { name: "Canvas", price: "$12" },
+            { name: "Charcoal Pencil", price: "$2.5" },
+            { name: "Oil Pastels", price: "$5" },
+            { name: "Crayons", price: "$4" },
+            { name: "Colored Pencils", price: "$6" },
+            { name: "Stencil", price: "$2" },
+            { name: "Compass", price: "$2.5" },
+            { name: "Protractor", price: "$1.2" },
+            { name: "Divider", price: "$1.8" },
+            { name: "Set Square", price: "$1.5" },
+            { name: "Clipboard", price: "$3" },
+            { name: "Office Tray", price: "$8" },
+            { name: "Pen Stand", price: "$5" },
+            { name: "Desk Organizer", price: "$15" },
+            { name: "Whiteboard", price: "$20" },
+            { name: "Corkboard", price: "$18" },
+            { name: "Staple Remover", price: "$1" },
+            { name: "Paper Weight", price: "$2" },
+            { name: "Bookend", price: "$6" },
+            { name: "Paper Shredder", price: "$50" },
+            { name: "Laminator", price: "$40" },
+            { name: "Printer Ink", price: "$25" },
+            { name: "Desk Lamp", price: "$30" },
+            { name: "Pin Board", price: "$15" },
+            { name: "Magnifying Glass", price: "$7" },
+            { name: "Scotch Tape Dispenser", price: "$3" },
+            { name: "Rubber Bands", price: "$1" },
+            { name: "Correction Pen", price: "$1.5" },
+            { name: "Glue Gun", price: "$10" },
+            { name: "Binder Pouch", price: "$3" },
+            { name: "ID Card Holder", price: "$2" },
+            { name: "Badge Clips", price: "$0.8" },
+            { name: "Plastic Sheet", price: "$1" },
+            { name: "Drawing Board", price: "$25" },
+            { name: "Stencil Kit", price: "$5" },
+            { name: "Desk Pad", price: "$10" },
+            { name: "Pen Refills", price: "$0.5" },
+            { name: "Colored Markers", price: "$5" },
+            { name: "Sticky Tape", price: "$1" },
+            { name: "Binder Notebook", price: "$3.50" },
+    { name: "Mechanical Pencil", price: "$2.00" },
+    { name: "Erasable Highlighter", price: "$2.25" },
+    { name: "Dry Erase Markers", price: "$4.00" },
+    { name: "Ballpoint Pens", price: "$1.50" },
+    { name: "Fountain Pen", price: "$15.00" },
+    { name: "Graphite Pencil Set", price: "$8.00" },
+    { name: "Calligraphy Pen", price: "$12.00" },
+    { name: "Notebook Divider Tabs", price: "$3.00" },
+    { name: "Desk Stapler", price: "$5.00" },
+    { name: "Heavy Duty Hole Puncher", price: "$10.00" },
+    { name: "Expanding File Folder", price: "$7.00" },
+    { name: "Leather Journal", price: "$20.00" },
+    { name: "Spiral Notebook", price: "$2.50" },
+    { name: "Cardstock Paper", price: "$4.50" },
+    { name: "Laminating Pouches", price: "$10.00" },
+    { name: "Ink Cartridge", price: "$30.00" },
+    { name: "Clipboard Folder", price: "$6.00" },
+    { name: "Presentation Folders", price: "$2.50" },
+    { name: "White Glue", price: "$1.00" },
+    { name: "Transparent Tape", price: "$0.80" },
+    { name: "Permanent Marker", price: "$1.20" },
+    { name: "Gel Pens", price: "$3.00" },
+    { name: "Highlighter Tape", price: "$2.00" },
+    { name: "Index Cards", price: "$1.50" },
+    { name: "Flipchart Pad", price: "$15.00" },
+    { name: "Desk Mat", price: "$12.00" },
+    { name: "Mesh Desk Organizer", price: "$18.00" },
+    { name: "Pencil Sharpener", price: "$2.50" },
+    { name: "Desk Calendar", price: "$6.00" },
+    { name: "Colored Paper Clips", price: "$1.20" },
+    { name: "Push Pins", price: "$0.80" },
+    { name: "Magnetic Clips", price: "$2.50" },
+    { name: "Plastic Ruler", price: "$1.00" },
+    { name: "Paper Cutter", price: "$7.00" },
+    { name: "Tracing Paper Pad", price: "$5.00" },
+    { name: "Sticky Label Sheets", price: "$4.00" },
+    { name: "Correction Tape", price: "$1.50" },
+    { name: "Desk Organizer Tray", price: "$8.00" },
+    { name: "Bullet Journal", price: "$15.00" },
+    { name: "Desk Lamp (LED)", price: "$25.00" },
+    { name: "Acrylic Ruler Set", price: "$3.50" },
+    { name: "Craft Glue", price: "$1.80" },
+    { name: "Permanent Adhesive Roller", price: "$3.00" },
+    { name: "Presentation Pointer", price: "$12.00" },
+    { name: "Postcard Pack", price: "$2.50" },
+    { name: "Clip-on Book Light", price: "$10.00" },
+    { name: "Drawing Compass Set", price: "$6.50" }
+        ];
+
+        // Reference to table body, search box, and download button
+        const tableBody = document.querySelector("#productTable tbody");
+        const searchBox = document.getElementById("searchBox");
+        const downloadBtn = document.getElementById("downloadBtn");
+
+        // Function to display products in the table
+        function displayProducts(filteredProducts) {
+            tableBody.innerHTML = ""; // Clear existing rows
+
+            if (filteredProducts.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="3">No products found</td></tr>`;
+                return;
+            }
+
+            filteredProducts.forEach((product, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td><input type="checkbox" class="select-product" data-index="${index}"></td>
+                    <td>${product.name}</td>
+                    <td>${product.price}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Initial display of all products
+        displayProducts(products);
+
+        // Event listener for search functionality
+        searchBox.addEventListener("input", () => {
+            const query = searchBox.value.toLowerCase();
+            const filteredProducts = products.filter(product =>
+                product.name.toLowerCase().includes(query)
+            );
+            displayProducts(filteredProducts);
+        });
+
+        // Event listener for download button
+        downloadBtn.addEventListener("click", () => {
+            const selectedProducts = [];
+            document.querySelectorAll(".select-product:checked").forEach(checkbox => {
+                const index = checkbox.dataset.index;
+                selectedProducts.push(products[index]);
+            });
+
+            if (selectedProducts.length === 0) {
+                alert("No products selected.");
+                return;
+            }
+
+            const csvContent = "Product,Price\n" + selectedProducts.map(product => `${product.name},${product.price}`).join("\n");
+            const blob = new Blob([csvContent], { type: "text/csv" });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "selected_products.csv";
+            a.click();
+
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>
