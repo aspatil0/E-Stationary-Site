@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESNARY |SHOPEE</title>
+    <link rel="shortcut icon" href="/desk/logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <style>
+         /* Cards section */
+         .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #FAF3E0;
+        }
+
+        .card {
+            background-color: #FFFFFF ;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: 0.5s ;
+        }
+
+        .card img {
+            width: 200px;
+            height: 290px;
+            border-radius: 10px;
+        }
+        .card:hover{transform: translateY(-35px);
+            background-color: #F5E6CC ;
+            
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .card .cost {
+            color: #007B83;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .scrollable-images img{
+            width: 400px;
+            height: 300px;
+            padding: 25px;
+        }
+        
+        .jio :hover{
+            background-color: #e91e63;
+            padding: 30px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+    </style>
+ <!-- Navbar -->
+ <!-- <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#items">Items</a>
+    <a href="#contact">Contact Us</a>
+</nav> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Dropdown</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Dropdown Styling */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .card{
+        margin-bottom: 55px;
+        padding: 25px;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .dropdown-content {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="#">Printing services</a>
+    <div class="dropdown">
+      <a href="#">Stationary &#9662;</a> <!-- Down arrow for dropdown -->
+      <div class="dropdown-content">
+        <a href="notebook.html">Notebooks |Pens</a>
+        <a href="kids.html">Kids</a>
+        <!-- <a href="files-folder.html">Files & Folders</a> -->
+        <a href="#">Art Supplies</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Books &#9662;</a> <!-- Down arrow for dropdown -->
+        <div class="dropdown-content">
+          <a href="fantasy.html">Fantasy</a>
+          <a href="scifi.html">Science Fiction</a>
+          <a href="mystery.html">Mystery</a>
+          <a href="romance.html">Romance</a>
+          <a href="thriller.html">Thriller</a>
+          <a href="biography.html">Biography</a>
+          <!-- <a href="files-folder.html">Files & Folders</a> -->
+        </div>
+      </div>
+    <a href="#">Craft Supplies</a>
+    <a href="#">Contact Us</a>
+  </div>
+</body>
+</html>
+
+
+    
+
+
+
+    <div class="cards-container">
+        <div class="card">
+            <img src="bgpic/Greenlights.jpg" alt="Product 1">
+            <h3>Greenlights</h3>
+            <p>An unconventional memoir by actor Matthew McConaughey, sharing his life's adventures and lessons learned.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/I'm Glad My Mom Died.jpg" alt="Product 2">
+            <h3>I'm Glad My Mom Died</h3>
+            <p>A candid memoir by actress Jennette McCurdy, detailing her struggles with her overbearing mother and her journey to self-discovery.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <!-- Repeat similar cards -->
+        <div class="card">
+            <img src="bgpic/Elon Musk.jpg" alt="Product 3">
+            <h3>Elon Musk</h3>
+            <p>A comprehensive biography by Walter Isaacson, exploring the life and innovations of the entrepreneur behind Tesla and SpaceX.</p>
+            <p class="cost">₹700</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/Educated.jpg" alt="Product 4">
+            <h3>Educated</h3>
+            <p>Tara Westover's memoir recounting her journey from a secluded upbringing in rural Idaho to earning a PhD from Cambridge University.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/Steve Jobs.jpg" alt="Product 5">
+            <h3>Steve Jobs</h3>
+            <p>Walter Isaacson's authorized biography of the Apple co-founder, offering an in-depth look at his life and visionary work.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Diary of a Young Girl.jpg" alt="Product 6">
+            <h3>The Diary of a Young Girl</h3>
+            <p>Anne Frank's poignant diary entries during her time hiding from the Nazis, providing a powerful perspective on the Holocaust.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/Becoming.jpg" alt="Product 7">
+            <h3>Becoming</h3>
+            <p>Former First Lady Michelle Obama's memoir, reflecting on her personal journey, challenges, and triumphs.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Glass Castle.jpg" alt="Product 8">
+            <h3>The Glass Castle</h3>
+            <p>Jeannette Walls' memoir detailing her unconventional and poverty-stricken upbringing, highlighting resilience and family bonds.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Wright Brothers.jpg" alt="Product 9">
+            <h3>The Wright Brothers</h3>
+            <p>David McCullough's biography of Orville and Wilbur Wright, chronicling their invention of the first successful airplane.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/Alexander Hamilton.jpg" alt="Product 10">
+            <h3>Alexander Hamilton</h3>
+            <p>Ron Chernow's comprehensive biography of the American founding father, inspiring the hit musical 'Hamilton'.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Immortal Life of Henrietta Lacks.jpg" alt="Product 11">
+            <h3>The Immortal Life of Henrietta Lacks</h3>
+            <p>Rebecca Skloot explores the story of Henrietta Lacks, whose cancer cells became one of the most important tools in medicine.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Story of My Experiments with Truth.jpg" alt="Product 12">
+            <h3>The Story of My Experiments with Truth</h3>
+            <p>Mahatma Gandhi's autobiography, detailing his philosophy and path to becoming a leader of India's independence movement.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Man Who Knew Infinity.jpg" alt="Product 13">
+            <h3>The Man Who Knew Infinity</h3>
+            <p>Robert Kanigel's biography of Indian mathematician Srinivasa Ramanujan and his collaboration with G.H. Hardy.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/Long Walk to Freedom.jpg" alt="Product 14">
+            <h3>Long Walk to Freedom</h3>
+            <p>Nelson Mandela's autobiography, chronicling his struggle against apartheid and his journey to becoming South Africa's first Black president.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Rise of Theodore Roosevelt.jpg" alt="Product 15">
+            <h3>The Rise of Theodore Roosevelt</h3>
+            <p>Edmund Morris' Pulitzer Prize-winning biography covering Roosevelt's early life up to his presidency.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Snowball Warren Buffett and the Business of Life.jpg" alt="Product 16">
+            <h3>The Snowball: Warren Buffett and the Business of Life</h3>
+            <p>Alice Schroeder's biography of Warren Buffett, offering insights into his investment strategies and personal life.</p>
+            <p class="cost">₹700</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/Frida A Biography of Frida Kahlo.jpg" alt="Product 17">
+            <h3>Frida: A Biography of Frida Kahlo</h3>
+            <p>Hayden Herrera's exploration of the life and art of Mexican painter Frida Kahlo.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/When Breath Becomes Air.jpg" alt="Product 18">
+            <h3>When Breath Becomes Air</h3>
+            <p>Neurosurgeon Paul Kalanithi's memoir, reflecting on his life and illness after being diagnosed with terminal cancer.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/Bossypants.jpg" alt="Product 19">
+            <h3>Bossypants</h3>
+            <p>Comedian Tina Fey's humorous memoir, sharing her journey from aspiring comic to Saturday Night Live and 30 Rock fame.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="bgpic/The Last Lion Winston Spencer Churchill.jpg" alt="Product 20">
+            <h3>The Last Lion: Winston Spencer Churchill</h3>
+            <p>William Manchester's detailed biography of Winston Churchill</p>
+            <p class="cost">₹600</p>
+        </div>
+        
+        
+
+        <!-- Add 6 more cards as needed -->
+    </div>
+</body>
+</html>
