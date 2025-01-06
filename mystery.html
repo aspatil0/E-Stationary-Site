@@ -16,12 +16,12 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #2C2C34;
         }
 
         .card {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
+            background-color: #2C3E50;
+            border: 1px solid #B22222;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -33,22 +33,24 @@
             width: 125px;
             height: 200px;
             border-radius: 10px;
-        }}
-        .card:hover{transform: translateY(-35px);
-            background-color: rgb(255, 98, 0);
-            
         }
+        .card:hover{transform: translateY(-15px);
+            background-color: rgb(255, 98, 0);
+            color: #1B1B2F;       
+        }
+
         .card h3 {
+            color: #EDEDED;
             margin: 10px 0;
         }
 
         .card p {
-            color: #555;
+            color: #BFBFBF;
             font-size: 14px;
         }
 
         .card .cost {
-            color: #e91e63;
+            color: #F1C40F;
             font-weight: bold;
             font-size: 16px;
         }
@@ -131,7 +133,7 @@
     body {
       font-family: Arial, sans-serif;
     }
-
+    
     /* Navbar Styling */
     .navbar {
       background-color: #333;
@@ -151,7 +153,10 @@
       background-color: #575757;
       border-radius: 5px;
     }
-
+    .card:hover h3,
+    .card:hover p {
+      color: #fff;
+    }
     /* Dropdown Styling */
     .dropdown {
       position: relative;
@@ -185,6 +190,11 @@
         margin-bottom: 55px;
         padding: 25px;
     }
+    .card p{
+      color: black;
+
+    }
+   
 
     /* Responsive Styling */
     @media (max-width: 768px) {
