@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Supplies</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcccb; /* Light pink */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #f0e68c; /* Light yellow */
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #ff69b4; /* Hot pink */
+        }
+        h2 {
+            color: #ff4500; /* OrangeRed */
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .craft-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .craft-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #f0e68c; /* Light yellow */
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            transition: transform 0.2s;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .discount {
+            color: red;
+            font-weight: bold;
+        }
+        .price {
+            text-decoration: line-through;
+            color: #999;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb; /* Light pink */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Craft Supplies Store</h1>
+    <p>Your one-stop shop for all your crafting needs!</p>
+</header>
+    
+<div class="container">
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/CI-watercolor.webp" alt="Water Colours">
+        <h3>Water Colours</h3>
+        <p class="price">₹500.00</p>
+        <p class="discount">₹350.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/acrylic-colors-162689.webp" alt="Acrylic Paint">
+        <h3>Acrylic Paint</h3>
+        <p class="price">₹150.00</p>
+        <p class="discount">₹90.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/ci-sketch_pencil_dcdf6e88-94a6-4c34-b8dc-02c9a10cd9c6.webp" alt="Sketch Pencils">
+        <h3>Sketch Pencils</h3>
+        <p class="price">₹400.00</p>
+        <p class="discount">₹350.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/diariii.webp" alt="Diary">
+        <h3>Diary</h3>
+        <p class="price">₹300.00</p>
+        <p class="discount">₹249.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://github.com/aspatil0/e-stationary-site/blob/main/pics/diary.jpg?raw=true" alt="Children diaries">
+        <h3>Children diaries</h3>
+        <p class="price">₹300.00</p>
+        <p class="discount">₹200.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://github.com/aspatil0/e-stationary-site/blob/main/pics/diary_men.jpg?raw=true" alt="Diaries for daily use">
+        <h3>Diaries for daily use</h3>
+        <p class="price">₹250.00</p>
+        <p class="discount">₹189.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/drset.webp" alt="Sketching and Drawing Pencils Set">
+        <h3>Sketching and Drawing Pencils Set</h3>
+        <p class="price">₹1500.00</p>
+        <p class="discount">₹1200.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://github.com/aspatil0/e-stationary-site/blob/main/pics/kidspens.jpg?raw=true" alt="Kids Pens">
+        <h3>Kids Pens</h3>
+        <p class="price">₹90.00</p>
+        <p class="discount">₹50.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/luxpen.webp" alt="Luxury Pens">
+        <h3>Luxury Pens</h3>
+        <p class="price">₹800.00</p>
+        <p class="discount">₹500.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/markers.webp" alt="Colourful Markers Set">
+        <h3>Colourful Markers Set</h3>
+        <p class="price">₹1200.00</p>
+        <p class="discount">₹999.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://raw.githubusercontent.com/aspatil0/e-stationary-site/refs/heads/main/pics/proj%20paper.webp" alt="Project Papers">
+        <h3>Project Papers</h3>
+        <p class="price">₹159.00</p>
+        <p class="discount">₹100.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="https://github.com/aspatil0/e-stationary-site/blob/main/pics/skicy%20notes.jpg?raw=true" alt="Sticky Notes">
+        <h3>Sticky Notes</h3>
+        <p class="price">₹100.00</p>
+        <p class="discount">₹50.00</p>
+        <button>Add to Cart</button>
+    </div>
+    
+</div>
+    
+<footer style="background-color: #f4f4f4; padding: 20px; margin-top: 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 20px;">
+        <!-- Delivery & Returns -->
+        <div>
+            <h3>Delivery & Returns</h3>
+            <ul style="list-style: none; padding: 0; ">
+                <li><a href="#" style="text-decoration: none; color: #333;">Shipping Policy</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Refund Policy</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Return & Exchange</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Cancellation Policy</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Help & FAQs</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Track Order</a></li>
+            </ul>
+        </div>
+
+        <!-- Programs -->
+        <div>
+            <h3>Programs</h3>
+            <ul style="list-style: none; padding: 25px;">
+                <li><a href="#" style="text-decoration: none; color: #333;">Affiliate Program</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Rewards</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Bulk Orders</a></li>
+            </ul>
+        </div>
+
+        <!-- Company Info -->
+        <div>
+            <h3>Company Info</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="#" style="text-decoration: none; color: #333;">About Us</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Privacy Policy</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Terms of Service</a></li>
+                <li><a href="#" style="text-decoration: none; color: #333;">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Follow Us -->
+        <div>
+            <h3>Follow Us</h3>
+            <div style="display: flex; gap: 10px;">
+                <a href="#" style="text-decoration: none; color: #333;">
+                    <img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="Facebook">
+                </a>
+                <a href="#" style="text-decoration: none; color: #333;">
+                    <img src="https://img.icons8.com/ios-filled/30/youtube-play.png" alt="YouTube">
+                </a>
+                <a href="#" style="text-decoration: none; color: #333;">
+                    <img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram">
+                </a>
+                <a href="#" style="text-decoration: none; color: #333;">
+                    <img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter">
+                </a>
+                <a href="#" style="text-decoration: none; color: #333;">
+                    <img src="https://img.icons8.com/ios-filled/30/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
+    <p style="text-align: center; color: #666; font-size: 14px; margin-top: 10px;">
+        &copy; 2025 Created By Devine Tech.
+    </p>
+</footer>
+
+</body>
+
+
