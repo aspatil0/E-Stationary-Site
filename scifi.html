@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESNARY |SHOPEE</title>
+    <link rel="shortcut icon" href="/desk/logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <style>
+         /* Cards section */
+         .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #0B0C10;
+        }
+
+        .card {
+            background-color: #1F2833;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: 0.5s ;
+        }
+
+        .card img {
+            width: 125px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .card:hover{transform: translateY(-10px);
+            background-color:#0FF0FC;
+            
+        }
+        .card:hover h3,
+        .card:hover p{ color: #8A2BE2;
+            
+        }
+        .card h3 {
+            color: #39FF14;
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #EAEAEA;
+            font-size: 14px;
+        }
+
+        .card .cost {
+            color: #FF003C;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .scrollable-images img{
+            width: 400px;
+            height: 300px;
+            padding: 25px;
+        }
+        
+        .jio :hover{
+            background-color: #e91e63;
+            padding: 30px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+    </style>
+ <!-- Navbar -->
+ <!-- <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#items">Items</a>
+    <a href="#contact">Contact Us</a>
+</nav> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Dropdown</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Dropdown Styling */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .card{
+        margin-bottom: 55px;
+        padding: 25px;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .dropdown-content {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="#">Printing services</a>
+    <div class="dropdown">
+      <a href="#">Stationary &#9662;</a> <!-- Down arrow for dropdown -->
+      <div class="dropdown-content">
+        <a href="notebook.html">Notebooks |Pens</a>
+        <a href="kids.html">Kids</a>
+        <!-- <a href="files-folder.html">Files & Folders</a> -->
+        <a href="#">Art Supplies</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Books &#9662;</a> <!-- Down arrow for dropdown -->
+        <div class="dropdown-content">
+          <a href="fantasy.html">Fantasy</a>
+          <a href="scifi.html">Science Fiction</a>
+          <a href="mystery.html">Mystery</a>
+          <a href="romance.html">Romance</a>
+          <a href="comic.html">Comics</a>
+          <a href="biography.html">Biography</a>
+          <!-- <a href="files-folder.html">Files & Folders</a> -->
+        </div>
+      </div>
+    <a href="#">Craft Supplies</a>
+    <a href="#">Contact Us</a>
+  </div>
+</body>
+</html>
+
+
+    
+
+
+
+    <div class="cards-container">
+        <div class="card">
+            <img src="bpics/51.jpg" alt="Product 1">
+            <h3>Dune</h3>
+            <p>Dune is a sci-fi epic where Paul Atreides battles political intrigue and destiny on the desert planet Arrakis, home to the coveted "spice."</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bpics/52.jpg" alt="Product 2">
+            <h3>Snow Crash </h3>
+            <p>Snow Crash is a cyberpunk thriller where hacker Hiro Protagonist uncovers a virtual drug that threatens both the digital and real worlds.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <!-- Repeat similar cards -->
+        <div class="card">
+            <img src="bpics/53.jpg" alt="Product 3">
+            <h3>Hyperion</h3>
+            <p>Dan Simmons' Hyperion is a richly woven narrative following seven pilgrims on a journey to the distant world of Hyperion, each with their own tale and purpose.</p>
+            <p class="cost">₹700</p>
+        </div>
+        <div class="card">
+            <img src="bpics/54.jpg" alt="Product 4">
+            <h3>The Martian</h3>
+            <p>Andy Weir's novel tells the gripping story of astronaut Mark Watney, stranded on Mars, as he uses his ingenuity and spirit to survive alone on the hostile planet.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/55.jpg" alt="Product 5">
+            <h3>The Terraformers</h3>
+            <p>Set 60,000 years in the future, this novel follows the development of a terraformed planet over a millennium, exploring themes of environmentalism and societal evolution.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/56.jpg" alt="Product 6">
+            <h3>Aftermath: Into the Unknown </h3>
+            <p>Robin, a young survivor in a post-apocalyptic world, teams up with a repentant biker to find safety in a journey of survival and hope.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/57.jpg" alt="Product 7">
+            <h3>Dust</h3>
+            <p>Thea, a 16-year-old in post-climate crisis southern Colorado, navigates isolation, identity, family extremism, and a harsh environment in search of connection.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/58.jpg" alt="Product 8">
+            <h3>How to Steal a Galaxy</h3>
+            <p>Ada Lamarr, a skilled space thief, as she infiltrates a high-profile event to steal a valuable item, only to be pursued by Rian White, a determined government agent. Their encounter sparks a high-stakes game of deception, theft, and romance.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/59.jpg" alt="Product 9">
+            <h3>Ender's Game</h3>
+            <p>Orson Scott Card's novel follows young Ender Wiggin, a child prodigy recruited into a military academy to prepare for an impending alien invasion.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/60.jpg" alt="Product 10">
+            <h3>Neuromancer</h3>
+            <p>Neuromancer is a seminal cyberpunk novel that follows Case, a washed-up computer hacker hired for one last job: to infiltrate a powerful artificial intelligence.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/51.jpg" alt="Product 11">
+            <h3>Dune</h3>
+            <p>Dune is a sci-fi epic where Paul Atreides battles political intrigue and destiny on the desert planet Arrakis, home to the coveted "spice."</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bpics/52.jpg" alt="Product 12">
+            <h3>Snow Crash </h3>
+            <p>Snow Crash is a cyberpunk thriller where hacker Hiro Protagonist uncovers a virtual drug that threatens both the digital and real worlds.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="bpics/53.jpg" alt="Product 13">
+            <h3>Hyperion</h3>
+            <p>Dan Simmons' Hyperion is a richly woven narrative following seven pilgrims on a journey to the distant world of Hyperion, each with their own tale and purpose.</p>
+            <p class="cost">₹700</p>
+        </div>
+        <div class="card">
+            <img src="bpics/54.jpg" alt="Product 14">
+            <h3>The Martian</h3>
+            <p>Andy Weir's novel tells the gripping story of astronaut Mark Watney, stranded on Mars, as he uses his ingenuity and spirit to survive alone on the hostile planet.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/55.jpg" alt="Product 15">
+            <h3>The Terraformers</h3>
+            <p>Set 60,000 years in the future, this novel follows the development of a terraformed planet over a millennium, exploring themes of environmentalism and societal evolution.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/56.jpg" alt="Product 16">
+            <h3>Aftermath: Into the Unknown </h3>
+            <p>Robin, a young survivor in a post-apocalyptic world, teams up with a repentant biker to find safety in a journey of survival and hope.</p>
+            <p class="cost">₹800</p>
+        </div><div class="card">
+            <img src="bpics/57.jpg" alt="Product 17">
+            <h3>Dust</h3>
+            <p>Thea, a 16-year-old in post-climate crisis southern Colorado, navigates isolation, identity, family extremism, and a harsh environment in search of connection.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/58.jpg" alt="Product 18">
+            <h3>How to Steal a Galaxy</h3>
+            <p>Ada Lamarr, a skilled space thief, as she infiltrates a high-profile event to steal a valuable item, only to be pursued by Rian White, a determined government agent. Their encounter sparks a high-stakes game of deception, theft, and romance.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/59.jpg" alt="Product 19">
+            <h3>Ender's Game</h3>
+            <p>Orson Scott Card's novel follows young Ender Wiggin, a child prodigy recruited into a military academy to prepare for an impending alien invasion.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/60.jpg" alt="Product 20">
+            <h3>Neuromancer</h3>
+            <p>Neuromancer is a seminal cyberpunk novel that follows Case, a washed-up computer hacker hired for one last job: to infiltrate a powerful artificial intelligence.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/51.jpg" alt="Product 21">
+            <h3>Dune</h3>
+            <p>Dune is a sci-fi epic where Paul Atreides battles political intrigue and destiny on the desert planet Arrakis, home to the coveted "spice."</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bpics/52.jpg" alt="Product 22">
+            <h3>Snow Crash </h3>
+            <p>Snow Crash is a cyberpunk thriller where hacker Hiro Protagonist uncovers a virtual drug that threatens both the digital and real worlds.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <div class="card">
+            <img src="bpics/53.jpg" alt="Product 23">
+            <h3>Hyperion</h3>
+            <p>Dan Simmons' Hyperion is a richly woven narrative following seven pilgrims on a journey to the distant world of Hyperion, each with their own tale and purpose.</p>
+            <p class="cost">₹700</p>
+        </div>
+        <div class="card">
+            <img src="bpics/54.jpg" alt="Product 24">
+            <h3>The Martian</h3>
+            <p>Andy Weir's novel tells the gripping story of astronaut Mark Watney, stranded on Mars, as he uses his ingenuity and spirit to survive alone on the hostile planet.</p>
+            <p class="cost">₹800</p>
+        </div><div class="card">
+            <img src="bpics/55.jpg" alt="Product 25">
+            <h3>The Terraformers</h3>
+            <p>Set 60,000 years in the future, this novel follows the development of a terraformed planet over a millennium, exploring themes of environmentalism and societal evolution.</p>
+            <p class="cost">₹800</p>
+        </div>
+        
+
+        <!-- Add 6 more cards as needed -->
+    </div>
+</body>
+</html>

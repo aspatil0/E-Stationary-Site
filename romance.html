@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESNARY |SHOPEE</title>
+    <link rel="shortcut icon" href="/desk/logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <style>
+         /* Cards section */
+         .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #FFF1F3;
+        }
+
+        .card {
+            background-color: #FFE5D9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: 0.5s ;
+        }
+
+       
+        .card img {
+            width: 125px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .card:hover{transform: translateY(-10px);
+            background-color: #FF6F61 ;
+            
+        }
+        .card:hover h3,
+        .card:hover p{ color: #FFD700;
+            
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #4A4A4A;
+            font-size: 14px;
+        }
+
+        .card .cost {
+            color: #FF4C5B;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .scrollable-images img{
+            width: 400px;
+            height: 300px;
+            padding: 25px;
+        }
+        
+        .jio :hover{
+            background-color: #e91e63;
+            padding: 30px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+    </style>
+ <!-- Navbar -->
+ <!-- <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#items">Items</a>
+    <a href="#contact">Contact Us</a>
+</nav> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Dropdown</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Dropdown Styling */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .card{
+        margin-bottom: 55px;
+        padding: 25px;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .dropdown-content {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="#">Printing services</a>
+    <div class="dropdown">
+      <a href="#">Stationary &#9662;</a> <!-- Down arrow for dropdown -->
+      <div class="dropdown-content">
+        <a href="notebook.html">Notebooks |Pens</a>
+        <a href="kids.html">Kids</a>
+        <!-- <a href="files-folder.html">Files & Folders</a> -->
+        <a href="#">Art Supplies</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <a href="#">Books &#9662;</a> <!-- Down arrow for dropdown -->
+        <div class="dropdown-content">
+          <a href="fantasy.html">Fantasy</a>
+          <a href="scifi.html">Science Fiction</a>
+          <a href="mystery.html">Mystery</a>
+          <a href="romance.html">Romance</a>
+          <a href="comic.html">Comics</a>
+          <a href="biography.html">Biography</a>
+          <!-- <a href="files-folder.html">Files & Folders</a> -->
+        </div>
+      </div>
+    <a href="#">Craft Supplies</a>
+    <a href="#">Contact Us</a>
+  </div>
+</body>
+</html>
+    <div class="cards-container">
+        <div class="card">
+            <img src="bpics/31.jpg" alt="Product 1">
+            <h3>The Seven Husbands of Evelyn Hugo</h3>
+            <p>Evelyn Hugo, a reclusive Hollywood star, reveals the secrets of her seven marriages to a journalist, uncovering love, scandal, and self-discovery.</p>
+            <p class="cost">₹500</p>
+        </div>
+        <div class="card">
+            <img src="bpics/32.jpg" alt="Product 2">
+            <h3>It Ends with Us</h3>
+            <p>Lily Bloom falls for neurosurgeon Ryle Kincaid, but her past love, Atlas, resurfaces, forcing her to face painful choices in this powerful romance.</p>
+            <p class="cost">₹600</p>
+        </div>
+        <!-- Repeat similar cards -->
+        <div class="card">
+            <img src="bpics/33.jpg" alt="Product 3">
+            <h3>Outlander</h3>
+            <p>Claire Randall, a WWII nurse, is transported to 18th-century Scotland, where she falls in love with Jamie Fraser, blending history, romance, and time travel.</p>
+            <p class="cost">₹700</p>
+        </div>
+        <div class="card">
+            <img src="bpics/34.jpg" alt="Product 4">
+            <h3>The Hating Game</h3>
+            <p>Rivals Lucy and Joshua's office competition turns to attraction, leading to an unexpected romance.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/35.jpg" alt="Product 5">
+            <h3>Me Before You</h3>
+            <p>Louisa Clark becomes caregiver to Will Traynor, and their unlikely bond evolves into a life-changing love story.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/36.jpg" alt="Product 6">
+            <h3>The Kiss Quotient</h3>
+            <p>Stella hires escort Michael to gain romantic experience, but their arrangement turns into a genuine emotional connection.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/37.jpg" alt="Product 7">
+            <h3>Red, White & Royal Blue</h3>
+            <p>U.S. president's son Alex and Prince Henry start as enemies but fall into a passionate romance that defies politics and tradition.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/38.jpg" alt="Product 8">
+            <h3>The Notebook</h3>
+            <p>Noah and Allie’s deep love is tested by time and Alzheimer's, as Noah fights to rekindle their bond.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/39.jpg" alt="Product 9">
+            <h3>Beach Read</h3>
+            <p>Authors January and Gus spend the summer challenging each other to write in the other's genre, leading to unexpected discoveries about love and life.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+            <img src="bpics/40.jpg" alt="Product 10">
+            <h3>The Wedding Date</h3>
+            <p>Alexa agrees to be Drew's fake date, but their chemistry turns the arrangement into a heartfelt romance, changing their futures.</p>
+            <p class="cost">₹800</p>
+        </div>
+        <div class="card">
+          <img src="bpics/31.jpg" alt="Product 11">
+          <h3>The Seven Husbands of Evelyn Hugo</h3>
+          <p>Evelyn Hugo, a reclusive Hollywood star, reveals the secrets of her seven marriages to a journalist, uncovering love, scandal, and self-discovery.</p>
+          <p class="cost">₹500</p>
+      </div>
+      <div class="card">
+          <img src="bpics/32.jpg" alt="Product 12">
+          <h3>It Ends with Us</h3>
+          <p>Lily Bloom falls for neurosurgeon Ryle Kincaid, but her past love, Atlas, resurfaces, forcing her to face painful choices in this powerful romance.</p>
+          <p class="cost">₹600</p>
+      </div>
+      <!-- Repeat similar cards -->
+      <div class="card">
+          <img src="bpics/33.jpg" alt="Product 13">
+          <h3>Outlander</h3>
+          <p>Claire Randall, a WWII nurse, is transported to 18th-century Scotland, where she falls in love with Jamie Fraser, blending history, romance, and time travel.</p>
+          <p class="cost">₹700</p>
+      </div>
+      <div class="card">
+          <img src="bpics/34.jpg" alt="Product 14">
+          <h3>The Hating Game</h3>
+          <p>Rivals Lucy and Joshua's office competition turns to attraction, leading to an unexpected romance.</p>
+          <p class="cost">₹800</p>
+      </div>
+      <div class="card">
+          <img src="bpics/35.jpg" alt="Product 15">
+          <h3>Me Before You</h3>
+          <p>Louisa Clark becomes caregiver to Will Traynor, and their unlikely bond evolves into a life-changing love story.</p>
+          <p class="cost">₹800</p>
+      </div>
+      <div class="card">
+          <img src="bpics/36.jpg" alt="Product 16">
+          <h3>The Kiss Quotient</h3>
+          <p>Stella hires escort Michael to gain romantic experience, but their arrangement turns into a genuine emotional connection.</p>
+          <p class="cost">₹800</p>
+      </div>
+      <div class="card">
+          <img src="bpics/37.jpg" alt="Product 17">
+          <h3>Red, White & Royal Blue</h3>
+          <p>U.S. president's son Alex and Prince Henry start as enemies but fall into a passionate romance that defies politics and tradition.</p>
+          <p class="cost">₹800</p>
+      </div>
+      <div class="card">
+          <img src="bpics/38.jpg" alt="Product 18">
+          <h3>The Notebook</h3>
+          <p>Noah and Allie’s deep love is tested by time and Alzheimer's, as Noah fights to rekindle their bond.</p>
+          <p class="cost">₹800</p>
+      </div>
+      <div class="card">
+          <img src="bpics/39.jpg" alt="Product 19">
+          <h3>Beach Read</h3>
+          <p>Authors January and Gus spend the summer challenging each other to write in the other's genre, leading to unexpected discoveries about love and life.</p>
+          <p class="cost">₹800</p>
+      </div>
+      <div class="card">
+          <img src="bpics/40.jpg" alt="Product 20">
+          <h3>The Wedding Date</h3>
+          <p>Alexa agrees to be Drew's fake date, but their chemistry turns the arrangement into a heartfelt romance, changing their futures.</p>
+          <p class="cost">₹800</p>
+      </div>
+        <!-- Add 6 more cards as needed -->
+    </div>
+</body>
+</html>
