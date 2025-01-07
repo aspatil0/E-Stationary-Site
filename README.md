@@ -6,7 +6,7 @@ Welcome to the **E-Commerce Stationary Website** project! This repository contai
 
 ## Table of Contents
 
-1. As a lead of project (adityaraj aptil) with a great team of 24 members we succesfully build a fantastic project which is a client based project for "bhavesh" who is a atarionary shop owner.
+1. As a lead of project (adityaraj Patil) with a great team of 24 members we succesfully build a fantastic project which is a client based project for "bhavesh" who is a atarionary shop owner.
 2. contributers:
    1.Adityaraj patil
    2.Mehtab sanadhi
