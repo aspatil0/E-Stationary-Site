@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESNARY | Printing Services</title>
+
+    <style>
+        /* General Reset */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        /* Navbar Styling */
+        .navbar {
+          background-color:white;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+    
+        .navbar a {
+          color: #fff;
+          text-decoration: none;
+          padding: 10px 15px;
+        }
+    
+        .navbar a:hover {
+          background-color: #575757;
+          border-radius: 5px;
+        }
+    
+        /* Dropdown Styling */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 200px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+        }
+    
+        .dropdown-content a {
+          color:white;
+          padding: 10px 15px;
+          text-decoration: none;
+          display: block;
+        }
+    
+        .dropdown-content a:hover {
+          background-color: #f1f1f1;
+        }
+    
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+          .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+    
+          .dropdown-content {
+            min-width: 100%;
+          }
+        }
+      
+
+        body{
+            background-color: #b69260;
+        }
+         /* Cards section */
+         .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            transition: 0.5s ;
+        }
+        .card{
+        margin-bottom: 55px;
+        padding: 25px;
+        
+    }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            border-radius: 10px;
+        }
+        .card:hover{transform: translateY(-25px);
+            background-color: rgb(35, 31, 31);
+            color:white;
+            
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .card .cost {
+            color: #e91e63;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .scrollable-images img{
+            width: 400px;
+            height: 300px;
+            padding: 25px;
+        }
+        
+        .jio :hover{
+            background-color: #e91e63;
+            padding: 30px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #b69260;
+            color: white;
+            padding: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            height:100px;
+            
+        }
+
+        .navbar a {
+            color:#3e0000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #e4e0cb;
+            
+        }
+
+        .hero img{
+            height:350px;
+
+            background-size:cover;
+           
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        .dot {
+          height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb; /* Light pink */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="#">Printing services</a>
+        <div class="dropdown">
+          <a href="#">Stationary &#9662;</a> <!-- Down arrow for dropdown -->
+          <div class="dropdown-content">
+            <a href="notebook.html">Notebooks</a>
+            <a href="">Kids</a>
+            <!-- <a href="#">Files & Folders</a> -->
+            <a href="art.html">Art Supplies</a>
+          </div>
+        </div>
+        <a href="#">Books</a>
+        <a href="#">Craft Supplies</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="hero fade" >
+        <img src="print-pics/hero.jpg" style="width:100% ">
+
+      </div>
+      <div class="hero fade" >
+        <img src="print-pics/hero1.jpg" style="width:100%" >
+
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+         
+      </div>
+
+    
+    
+    
+        <div class="cards-container">
+            <div class="card">
+                <img src="print-pics/BW.webp" >
+                <h3>A4 size Printing(BW)</h3>
+                <p>
+                    Prints Black and White A4 Size Pages
+                </p>
+                
+            </div>
+            <div id="box" class="card">
+                <img src="print-pics/color.jpg">
+                <h3>A4 size Printing(Color)</h3>
+                <p>Prints Color A4 Size pages</p>
+                
+            </div>
+            <!-- Repeat similar cards -->
+            <div id="box" class="card">
+                <img src="print-pics/flex.jpg" >
+                <h3>Flex Printing</h3>
+                <p>Prints High Quality Flex (Color & BW)</p>
+                
+            </div>
+            <div id="box"  class="card">
+                <img src="print-pics/photo.jpg" >
+                <h3>Photograph Printing</h3>
+                <p>Prints Photograph For Desired Size</p>
+                
+            </div>
+            <div id="box" class="card">
+                <img src="print-pics/mug.jpg" >
+                <h3>Mug Printing</h3>
+                <p>Prints 3D Designs & Photos On Mug</p>
+            </div>
+            <div id="box"  class="card">
+                <img src="print-pics/tshirt.jpg" >
+                <h3>T-Shirt Printing</h3>
+                <p>Prints Designs & Photos On T-shirts</p>
+            </div>
+            <div id="box" class="card">
+                <img src="print-pics/phone.jpg" >
+                <h3>Mobile Cases Printing</h3>
+                <p>Prints Photos & 3D Designs On Mobile Cases</p>
+            </div>
+            </div>
+        
+        </div>
+
+        <footer style="background-color: rgb(42, 40, 40);color:White; padding: 20px; margin-top: 20px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 20px;">
+                <!-- Delivery & Returns -->
+                <div>
+                    <h3>Delivery & Returns</h3>
+                    <ul style="list-style: none; padding: 0; ">
+                        <li><a href="#" style="text-decoration: none; color:white;">Shipping Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Refund Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Return & Exchange</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Cancellation Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Help & FAQs</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Track Order</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Programs -->
+                <div>
+                    <h3>Programs</h3>
+                    <ul style="list-style: none; padding: 25px;">
+                        <li><a href="#" style="text-decoration: none; color:white;">Affiliate Program</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Rewards</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Bulk Orders</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Company Info -->
+                <div>
+                    <h3>Company Info</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#" style="text-decoration: none; color:white;">About Us</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Privacy Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Terms of Service</a></li>
+                        <li><a href="#" style="text-decoration: none; color:white;">Contact Us</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Follow Us -->
+                <div>
+                    <h3>Follow Us</h3>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="#" style="text-decoration: none; color:white;">
+                            <img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="Facebook">
+                        </a>
+                        <a href="#" style="text-decoration: none; color:white;">
+                            <img src="https://img.icons8.com/ios-filled/30/youtube-play.png" alt="YouTube">
+                        </a>
+                        <a href="#" style="text-decoration: none; color:white;">
+                            <img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram">
+                        </a>
+                        <a href="#" style="text-decoration: none; color:white;">
+                            <img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#" style="text-decoration: none; color:white;">
+                            <img src="https://img.icons8.com/ios-filled/30/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; color: white; font-size: 14px; margin-top: 10px;">
+                &copy; 2025 Created By Devine Tech.
+            </p>
+        </footer>
+</body>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("hero");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+</html>
