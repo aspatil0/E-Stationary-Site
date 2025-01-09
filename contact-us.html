@@ -1,5 +1,4 @@
 
-
 <style>
     * {
         box-sizing: border-box;
@@ -275,6 +274,31 @@
             height: 35px;
         }
     }
+    .navbar {
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
 
 
 
@@ -282,6 +306,12 @@
 
 
 </style>
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="items.html">Items</a>
+    <a href="contact-us.html">Contact Us</a>
+</nav>
 
 <div class="contact_us_2">
     <div class="responsive-container-block big-container">
@@ -304,7 +334,7 @@
                                     <input class="input" name="Username" placeholder="Please enter username...">
                                 </div>
                                 <div class="responsive-cell-block">
-                                    <p class="text-blk input-title">UPLOAD CSV FILE</p>
+                                    <p class="text-blk input-title">UPLOAD  FILE</p>
                                     <div class="file-input-container">
                                         <input type="file" class="file-input" name="csvFile" accept=".csv">
                                     </div>
