@@ -16,26 +16,34 @@
         body {
           font-family: Arial, sans-serif;
         }
-    
-        /* Navbar Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb; /* Light pink */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+        }
         .navbar {
-          background-color:white;
-          padding: 10px 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-    
-        .navbar a {
-          color: #fff;
-          text-decoration: none;
-          padding: 10px 15px;
-        }
-    
-        .navbar a:hover {
-          background-color: #575757;
-          border-radius: 5px;
-        }
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
     
         /* Dropdown Styling */
         .dropdown {
@@ -46,13 +54,15 @@
         .dropdown-content {
           display: none;
           position: absolute;
-          background-color: #f9f9f9;
+          background-color: rgb(158, 206, 158);
           min-width: 200px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           z-index: 1;
+          border-radius: 20px;
         }
     
         .dropdown-content a {
+          
           color:white;
           padding: 10px 15px;
           text-decoration: none;
@@ -60,7 +70,8 @@
         }
     
         .dropdown-content a:hover {
-          background-color: #f1f1f1;
+          
+          border-radius: 20px;
         }
     
         .dropdown:hover .dropdown-content {
@@ -69,19 +80,20 @@
     
         /* Responsive Styling */
         @media (max-width: 768px) {
-          .navbar {
-            flex-direction: column;
-            align-items: flex-start;
-          }
-    
-          .dropdown-content {
-            min-width: 100%;
-          }
-        }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .dropdown-content {
+        min-width: 100%;
+      }
+     
+    }
       
 
         body{
-            background-color: #b69260;
+            background-color: #c8f2ff;
         }
          /* Cards section */
          .cards-container {
@@ -95,16 +107,13 @@
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgb(60 159 136);
             text-align: center;
             padding: 15px;
             transition: 0.5s ;
         }
-        .card{
-        margin-bottom: 55px;
-        padding: 25px;
         
-    }
+
 
         .card img {
             width: 100%;
@@ -112,8 +121,8 @@
             border-radius: 10px;
         }
         .card:hover{transform: translateY(-25px);
-            background-color: rgb(35, 31, 31);
-            color:white;
+            background-color: rgb(154, 215, 154);
+            color:rgb(9, 87, 85);
             
         }
         .card h3 {
@@ -121,8 +130,9 @@
         }
 
         .card p {
-            color: #555;
+            color: rgb(160, 16, 40);
             font-size: 14px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .card .cost {
@@ -155,7 +165,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background-color: #b69260;
+            background-color: #c8f2ff;
             color: white;
             padding: 50px;
             font-size: 20px;
@@ -174,44 +184,22 @@
         }
 
         .navbar a:hover {
-            background-color: #e4e0cb;
+            background-color: rgb(42, 42, 122);
+            color:white;
             
         }
 
         .hero img{
             height:350px;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
             background-size:cover;
            
         }
 
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
+    
+        
 
-        @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
-        }
-
-        .dot {
-          height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
 
 
 
@@ -235,27 +223,19 @@
         <a href="#">Craft Supplies</a>
         <a href="#">Contact Us</a>
       </div>
-      <div class="hero fade" >
-        <img src="print-pics/hero.jpg" style="width:100% ">
+      <div class="hero " >
+        <img src="print-pics/Printing Services.jpg" style="width:100% ">
 
       </div>
-      <div class="hero fade" >
-        <img src="print-pics/hero1.jpg" style="width:100%" >
-
-      </div>
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-         
-      </div>
+      
 
     
     
     
         <div class="cards-container">
             <div class="card">
-                <img src="print-pics/BW.webp" >
-                <h3>A4 size Printing(BW)</h3>
+                <img src="print-pics/bla.jpg" >
+                <h3>A4 SIZE PRINTING (BW)</h3>
                 <p>
                     Prints Black and White A4 Size Pages
                 </p>
@@ -263,54 +243,64 @@
             </div>
             <div id="box" class="card">
                 <img src="print-pics/color.jpg">
-                <h3>A4 size Printing(Color)</h3>
+                <h3>A4 SIZE PRINTING(COLOR)</h3>
                 <p>Prints Color A4 Size pages</p>
                 
             </div>
             <!-- Repeat similar cards -->
             <div id="box" class="card">
                 <img src="print-pics/flex.jpg" >
-                <h3>Flex Printing</h3>
+                <h3>FLEX PRINTING</h3>
                 <p>Prints High Quality Flex (Color & BW)</p>
                 
             </div>
             <div id="box"  class="card">
                 <img src="print-pics/photo.jpg" >
-                <h3>Photograph Printing</h3>
+                <h3>PHOTOGRAPH PRINTING</h3>
                 <p>Prints Photograph For Desired Size</p>
                 
             </div>
             <div id="box" class="card">
                 <img src="print-pics/mug.jpg" >
-                <h3>Mug Printing</h3>
+                <h3>MUG PRINTING</h3>
                 <p>Prints 3D Designs & Photos On Mug</p>
             </div>
             <div id="box"  class="card">
                 <img src="print-pics/tshirt.jpg" >
-                <h3>T-Shirt Printing</h3>
+                <h3>T-SHIRT PRINTING</h3>
                 <p>Prints Designs & Photos On T-shirts</p>
             </div>
             <div id="box" class="card">
                 <img src="print-pics/phone.jpg" >
-                <h3>Mobile Cases Printing</h3>
+                <h3>MOBILE CASE PRINTING</h3>
                 <p>Prints Photos & 3D Designs On Mobile Cases</p>
+            </div>
+            <div id="box" class="card">
+                <img src="print-pics/ID.jpg" >
+                <h3>ID CARD MAKING</h3>
+                <p>Make College ID's</p>
+            </div>
+            <div id="box" class="card">
+                <img src="print-pics/certificate.jpg" >
+                <h3>CERTIFICATE PRINTING</h3>
+                <p>Certificate With Different Design Will Be Printed</p>
             </div>
             </div>
         
         </div>
 
-        <footer style="background-color: rgb(42, 40, 40);color:White; padding: 20px; margin-top: 20px;">
+        <footer style="background-color:rgb(154, 215, 154) ;color:rgb(42, 42, 122); padding: 20px; margin-top: 20px;">
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 20px;">
                 <!-- Delivery & Returns -->
                 <div>
                     <h3>Delivery & Returns</h3>
                     <ul style="list-style: none; padding: 0; ">
-                        <li><a href="#" style="text-decoration: none; color:white;">Shipping Policy</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Refund Policy</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Return & Exchange</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Cancellation Policy</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Help & FAQs</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Track Order</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Shipping Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Refund Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Return & Exchange</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Cancellation Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Help & FAQs</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Track Order</a></li>
                     </ul>
                 </div>
         
@@ -318,9 +308,9 @@
                 <div>
                     <h3>Programs</h3>
                     <ul style="list-style: none; padding: 25px;">
-                        <li><a href="#" style="text-decoration: none; color:white;">Affiliate Program</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Rewards</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Bulk Orders</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Affiliate Program</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Rewards</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Bulk Orders</a></li>
                     </ul>
                 </div>
         
@@ -328,10 +318,10 @@
                 <div>
                     <h3>Company Info</h3>
                     <ul style="list-style: none; padding: 0;">
-                        <li><a href="#" style="text-decoration: none; color:white;">About Us</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Privacy Policy</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Terms of Service</a></li>
-                        <li><a href="#" style="text-decoration: none; color:white;">Contact Us</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">About Us</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Privacy Policy</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Terms of Service</a></li>
+                        <li><a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">Contact Us</a></li>
                     </ul>
                 </div>
         
@@ -339,49 +329,27 @@
                 <div>
                     <h3>Follow Us</h3>
                     <div style="display: flex; gap: 10px;">
-                        <a href="#" style="text-decoration: none; color:white;">
+                        <a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">
                             <img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="Facebook">
                         </a>
-                        <a href="#" style="text-decoration: none; color:white;">
+                        <a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">
                             <img src="https://img.icons8.com/ios-filled/30/youtube-play.png" alt="YouTube">
                         </a>
-                        <a href="#" style="text-decoration: none; color:white;">
+                        <a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">
                             <img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram">
                         </a>
-                        <a href="#" style="text-decoration: none; color:white;">
+                        <a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">
                             <img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter">
                         </a>
-                        <a href="#" style="text-decoration: none; color:white;">
+                        <a href="#" style="text-decoration: none; color:rgb(42, 42, 122)">
                             <img src="https://img.icons8.com/ios-filled/30/linkedin.png" alt="LinkedIn">
                         </a>
                     </div>
                 </div>
             </div>
-            <p style="text-align: center; color: white; font-size: 14px; margin-top: 10px;">
+            <p style="text-align: center; color: rgb(42, 42, 122); font-size: 14px; margin-top: 10px;">
                 &copy; 2025 Created By Devine Tech.
             </p>
         </footer>
 </body>
-
-<script>
-    let slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("hero");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 3000); // Change image every 2 seconds
-    }
-    </script>
 </html>
