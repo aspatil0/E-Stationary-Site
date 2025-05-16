@@ -1,4 +1,4 @@
-# E-Commerce Stationary Website
+# E-Commerce Stationary Website 
 
 Welcome to the **E-Commerce Stationary Website** project! This repository contains the source code and documentation for a full-stack e-commerce platform designed for seamless online shopping experiences.
 
